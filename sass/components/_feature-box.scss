@@ -1,0 +1,109 @@
+// FEATURES
+
+.features {
+  background: url(../img/soccer1.jpg) no-repeat center center/cover;
+  position: relative;
+  color: $color-black;
+  background-attachment: fixed;
+  font-size: 1.5rem;
+  padding: 0rem 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  height: 40rem;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  &__card {
+    background: rgba(255, 254, 254, 0.6);
+    border: 4px solid;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.6);
+    border-color: $color-primary;
+    transition: transform 0.3s;
+  }
+
+  &__icon {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.6rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__heading {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  &__info {
+    font-size: 1.4rem;
+  }
+
+  &__card:hover {
+    transform: translateY(-1.5rem) scale(1.06);
+  }
+}
+
+@media (max-width: 1200px) {
+  .features__heading {
+    font-size: 1.7rem;
+  }
+
+  .features__info {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 995px) {
+  .flex-items {
+    flex-direction: column;
+  }
+  .features {
+    height: 80rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .features {
+    height: 65rem;
+
+    padding-left: 2.5rem;
+
+    width: auto;
+  }
+  .features__icon {
+    font-size: 3rem;
+  }
+
+  .features__heading {
+    font-size: 1.3rem;
+  }
+  .features__info {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,76 @@
+// Section Contact
+.section-contact {
+  position: relative;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  box-shadow: 0rem 5rem 7rem rgba($color-black, 0.5);
+
+  height: 48rem;
+  z-index: 1;
+}
+
+.contact__heading {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 6rem;
+  background-image: linear-gradient(to right, $color-white, $color-grey-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  @include respond(tab-port) {
+    font-size: 4.5rem;
+  }
+}
+
+.contact__info {
+  font-family: "Oswald", sans-serif;
+  color: $color-white;
+  font-size: 2rem;
+  -webkit-background-clip: text;
+
+  @include respond(tab-port) {
+    font-size: 1.5rem;
+  }
+}
+
+.form {
+  margin-left: 7rem;
+  margin-right: 7rem;
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    -moz-outline: none;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid $color-white;
+    width: 90%;
+    display: block;
+
+    &:focus {
+      outline: none;
+      -moz-outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid $color-green;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid $color-red;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark-2;
+    }
+  }
+}

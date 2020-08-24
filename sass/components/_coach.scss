@@ -1,0 +1,86 @@
+// COACH PROFILE
+.coach {
+  position: relative;
+  margin-top: -2rem;
+}
+
+#about {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-grey-light-1,
+    $color-grey-light-2
+  );
+  position: relative;
+  z-index: 1;
+  font-family: "Oswald", sans-serif;
+}
+
+.coach__heading {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.coach__name {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  border-bottom: 2px solid;
+  text-align: center;
+}
+
+.about__coach {
+  font-size: 23px;
+}
+
+.coach-photo {
+  width: 70%;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+  border-radius: 500px;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .coach__heading {
+    font-size: 3.5rem;
+  }
+
+  .coach__name {
+    font-size: 2rem;
+  }
+
+  .about__coach {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 775px) {
+  .coach__heading {
+    font-size: 4rem;
+  }
+  .coach__name {
+    font-size: 1.5rem;
+  }
+
+  .about__coach {
+    font-size: 1rem;
+  }
+
+  .coach-photo {
+    width: 50%;
+    margin-left: 8rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .coach-photo {
+    margin-left: 6.5rem;
+  }
+}
