@@ -1,14 +1,12 @@
 # Soccer-Coach
 
-Second Website Project
+One of my first websites I have made.
 
-Hello! This is my second ever website project!
+I am including this in my portfolio for you to see my growth as a web developer.
 
-I designed this website for portfolio and for personal use.
+I made this using html, css, and Bootstrap4.
 
 Preview the site here -> https://angry-boyd-a0bbd4.netlify.app
-
-Hope you enjoy!
 
 Thank you!
 
